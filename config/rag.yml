@@ -1,2 +1,4 @@
 chat_model_name: abab6.5-chat
+chat_api_key: None
 embedding_model_name: text-embedding-v4
+embedding_model_name: None
