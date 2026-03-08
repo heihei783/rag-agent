@@ -1,3 +1,4 @@
 .env
 .vscode
 rag/learn_stage.py
+__pycache__/

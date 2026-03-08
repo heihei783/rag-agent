@@ -20,7 +20,7 @@ def load_agent_config(config_path:str = get_abs_path("config/agent.yml"),encodin
          return yaml.load(f,Loader = yaml.FullLoader)
     
 
-rag_conf = load_rag_config()
+rag_conf: dict = load_rag_config() 
 chroma_conf = load_Chroma_config()
 prompts_conf = load_prompts_config()
 agent_conf = load_agent_config()
