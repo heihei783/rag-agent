@@ -22,7 +22,7 @@ class BaseModefactory(ABC):
 
 class ChatModelFactory(BaseModefactory):
     def generator(self) -> Optional[Embeddings | BaseChatOpenAI]:
-        return ChatOpenAI(model=rag_conf["chat_model_name"],api_key=(rag_conf.get("chat_api_key") or chat_model_api))
+        return ChatOpenAI(model=rag_conf["chat_model_name"],api_key=(rag_conf.get("chat_api_key") or chat_model_api),base_url=rag_conf.get("chat_base_url"))
     
 class EmbeddingFactory(BaseModefactory):
     def generator(self) -> Optional[Embeddings | BaseChatOpenAI]:

@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
     retriever = vs.get_retriever()
 
-    res = retriever.invoke("迷路")
+    res = retriever.invoke("可莉的角色故事")
 
     for r in res:
         print(r.page_content)

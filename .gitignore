@@ -2,3 +2,5 @@
 .vscode
 rag/learn_stage.py
 __pycache__/
+auto/
+*__pycache__*
